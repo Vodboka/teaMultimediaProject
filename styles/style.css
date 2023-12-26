@@ -1,0 +1,10 @@
+.canvasHolder{
+    justify-content: center;
+    display: flex;
+}
+#map {
+    height: 550px;
+    width: 550px;
+    border: 5px blue;
+
+}
