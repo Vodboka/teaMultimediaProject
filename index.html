@@ -23,15 +23,38 @@
         <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
         crossorigin=""></script>
+
     </head>
 
     <body>
-        <div class="canvasHolder">
-            <canvas id="myCanvas" width="600" height="600"></canvas>
-        </div>
         <div class="container">
             <div id="map"></div>
         </div>
 
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Please add the wonderful memory you made here</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container mt-5">
+                        <form>
+                          <div class="form-group">
+                            <label for="imageInput">Upload an Image:</label>
+                            <input type="file" class="form-control-file" id="imageInput" accept="image/*">
+                          </div>
+                        </form>
+                      </div>
+                </div>
+                <div class="modal-footer">
+                  <button id="btnSubmit" type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Submit</button>
+                  <button id="btnClose" type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Wait, I changed my mind</button>
+                </div>
+              </div>
+            </div>
+          </div>
     </body>
 </html>
