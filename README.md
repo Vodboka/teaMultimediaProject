@@ -13,5 +13,5 @@
 4. All JavaScript code must be provided in a single .js file (see scripts directory)
 5. Include in your archive all the required assets (images, json files etc.) 
 6.  Use ONLY relative paths to reference resources
-7.  or people who worked as a team, a small .docx file which explains the contribution of each individual is required
+
 

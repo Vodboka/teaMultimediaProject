@@ -3,6 +3,27 @@
     justify-content: center;
     margin-top: 10vh;
 }
+.custom-marker {
+    background-color: #0d6efd;;
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+
+.custom-marker:hover {
+    background-color: yellow; 
+    transform: scale(1.2); 
+}
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden; 
+}
 #map {
     height: 75vh;
     width: 75vw;    
